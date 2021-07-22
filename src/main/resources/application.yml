@@ -1,0 +1,20 @@
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.SQLServer2012Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      hbm2ddl-auto: update
+  datasource:
+    url: jdbc:sqlserver://surajdb.database.windows.net:1433;databaseName=suraj;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    username: suraj
+    password: April@20
+
+
+server:
+  port: 9191
+
+eureka:
+  client:
+    enabled: false
+    register-with-eureka: false
